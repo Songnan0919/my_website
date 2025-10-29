@@ -193,8 +193,17 @@
 						<!-- cv -->
 							<article id="cv">
 								<h2 class="major">Curriculum Vitae</h2>
+								<script>
+									// Close sidebar when CV page loads
+									document.addEventListener('DOMContentLoaded', function() {
+										const sidebar = document.getElementById('your-sidebar-id'); // replace with actual sidebar ID
+										if (sidebar && sidebar.classList.contains('open')) {
+											sidebar.classList.remove('open');
+										}
+									});
+								</script>
 							    <div class="pdf-container">
-       							<embed src="files/autoCV.pdf" type="application/pdf" width="100%" height="600px" />
+       							<embed src="files/CV_Songnan.pdf" type="application/pdf" width="100%" height="600px" />
    								</div>
 								<p style="font-size: 14px; color: #aba7a7;">*If it does not show up, refresh the page.</p>
 							</article>
@@ -203,8 +212,8 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<p>You can reach me via email at <a href="mailto:Songnan.Qi@etu.unige.ch">Songnan.Qi@etu.unige.ch</a> & <a href="mailto:qisongnan@outlook.com">qisongnan@outlook.com</a><br />
-								Or by telephone at <a href="tel:+41786339109">+41786339109</a></p>
+								<p>You can reach me via email at <a href="mailto:Songnan.Qi@etu.unige.ch">Songnan.Qi@etu.unige.ch</a> & <a href="mailto:qisongnan@outlook.com">qisongnan@outlook.com</a></p>
+								<!-- Or by telephone at <a href="tel:+41786339109">+41786339109</a></p> -->
 								<p>Department of Astronomy<br />
 									University of Geneva<br />
 									Chemin Pegasi 51, CH-1290 Versoix, Switzerland</p>
